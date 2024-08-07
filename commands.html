@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Commands</title>
+</head>
+<body>
+    <div style="width: 800; margin: auto;">
+        <h1>Git Commands</h1>
+        <ul>
+            <li><b>git --version:</b> This gives the current version of the git on the system</li>
+            <li><b>git init:</b> This initialises the git for the current project</li>
+            <li><b>git status:</b> This gives the status of the files. If a file is new, it will show it with 'U' (untracked) new file and if the file is modified, it is shown with 'M' (modified)</li>
+            <li><b>git add .:</b> This will add all the files with changes to be staged</li>
+            <li><b>git add filename:</b> This will add only the mentioned file to be staged</li>
+            <li><b>git commit -m 'msg':</b> This will commit the changes with the message mentioned in the single quotes</li>
+            <li><b>git log:</b> This will show the log of the commits made</li>
+            <li><b>git reset --hard versionfromlog:</b> This will revert the changes to the mentioned version and also clear/delete the code</li>
+            <li><b>git reset --soft versionfromlog:</b> This will revert the changes to the mentioned version but will retain the code</li>
+        </ul>
+
+        <br><br>
+
+        <h4>To use repository on github</h4>
+        <ol>
+            <li>Create the repository on github</li>
+            <li>Open Cmd/Terminal</li>
+            <li>Navigate to the desired folder</li>
+            <li><b>git remote add origin linkofgithubrepo:</b> This will create the link to the remote github repository</li>
+            <li><b>git branch -M main:</b> This will create the main branch inside the repository</li>
+            <li><b>git push -u origin main:</b> This is used to push the code onto the remote repository the very first time</li>
+            <li>After this, we can use the following commands for future versioning</li>
+            <li><b>git add .:</b> Add the files to be changed</li>
+            <li><b>git commit -m 'msg':</b> This will commit the changes with the message</li>
+            <li><b>git push:</b> We need to write only push for future changes</li>
+        </ol>
+
+        <br><br>
+        <h4>Cloning a repository</h4>
+        <ol>
+            <li>Open Cmd/Terminal</li>
+            <li>Navigate to the folder you wish to store the clone in</li>
+            <li><b>git clone linktoclonefrom:</b> This will clone the repository from the github link</li>
+            <li><b>git pull:</b> Navigate to the folder. This will help to pull any changes that is made to the original repository. If no changes are made, it will inform that the folder is 'Already up to date'</li>
+        </ol>
+
+        <br><br>
+        <h4>Branching</h4>
+        <ul>
+            <li><b>git branch:</b> This will show the list of branches and the branch currently in use</li>
+            <li><b>git branch branchname:</b> This will create a new branch with name branchname</li>
+            <li><b>git checkout branchname:</b> This will switch from the current branch to branchname</li>
+            <li><b>git merge branchname:</b> Navigate to the branch you need to merge into and then use this command to merge branchname branch</li>
+        </ul>
+    </div>
+</body>
+</html>
